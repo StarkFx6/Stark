@@ -1,0 +1,33 @@
+// Lab5.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	float a, b, c, x, F;
+	cout << "Input a: ";
+	cin >> a;
+	cout << "Input b: ";
+	cin >> b;
+	cout << "Input c: ";
+	cin >> c;
+	cout << "Input x: ";
+	cin >> x;
+	if (x <= a) {
+		F = 3 * pow(a, 3) + fabs(sqrt(b) + pow(x, 3));
+		cout << "Output F: " << F;
+	} 
+	else {
+		if (a < x && x < b) {
+			F = b + pow(x, 3) / 10 * x;
+			cout << "Output F: " << F;
+	}
+		else {
+			F = pow(b, 1 / 5.0);
+			cout << "Output F: " << F;
+		}
+	}
+}
