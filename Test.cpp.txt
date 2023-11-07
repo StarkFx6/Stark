@@ -16,14 +16,16 @@ int main()
 	cin >> c;
 	cout << "Input x: ";
 	cin >> x;
+
 	if (x <= a) {
 		F = 3 * pow(a, 3) + fabs(sqrt(b) + pow(x, 3));
 		cout << "Output F: " << F;
 	} 
 	else {
 		if (a < x && x < b) {
-			F = b + pow(x, 3) / 10 * x;
-			cout << "Output F: " << F;
+                      if(10 * x != 0)  {  
+                                F = b + pow(x, 3) / 10 * x;
+	                        cout << "Output F: " << F; }		
 	}
 		else {
 			F = pow(b, 1 / 5.0);
